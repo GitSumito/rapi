@@ -2,5 +2,5 @@
 while read target
 do
   echo $target
-  python rakuten.py $target >> ./output/$target.txt 
+  python rakuten.py $target > ./output/$target.txt 
 done < ./list.csv
