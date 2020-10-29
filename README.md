@@ -12,7 +12,9 @@ export RAKUTEN=1234567
 
 # 実行
 ```
-sh ./execute.sh 
+sh ./execute2.sh 
+or
+sh ./execute3.sh 
 ```
 
 # 結果
