@@ -6,16 +6,12 @@ def kick_rakten_api():
     
     REQUEST_URL = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20170706"
  
-    # パラメーター生成
+    # generate parameter
     search_param = set_api_parameter()
-    # Get
     response = requests.get(REQUEST_URL, search_param)
-    # APIから返却された出力パラメーターを取得
     result = response.json()
  
-    # 確認のために出力
     print(result)
-    # 
     item = result["Items"][0]["Item"]
     print(item["itemPrice"])
  
