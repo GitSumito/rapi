@@ -1,6 +1,6 @@
 #!/bin/sh
 while read target
 do
-  echo $target
-  python rakuten.py $target > ./output/$target.txt 
+  :> ./output/result.txt
+  python rakuten.py $target >> ./output/result.txt
 done < ./list.csv
